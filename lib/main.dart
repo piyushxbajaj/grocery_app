@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'presentation/custom_icons_iconsdart_icons.dart';
 
 //import 'package:provider/provider.dart';
 
@@ -109,46 +110,79 @@ class MyHomePage extends StatelessWidget {
                       ),
                       Padding(
                         padding:
-                            const EdgeInsets.only(top: 10, left: 80, right: 80),
+                            const EdgeInsets.only(top: 10, left: 90, right: 90),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
-                            Ink(
-                                decoration: const ShapeDecoration(
-                                  color: Colors.lightBlue,
-                                  shape: CircleBorder(),
+                            Container(
+                              height: 50,
+                              width: 50,
+                              decoration: BoxDecoration(
+                                border: Border.all(width: 3),
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(40),
                                 ),
-                                child: IconButton(
-                                  icon: Icon(
-                                    Icons.directions_transit,
+                              ),
+                              child: Ink(
+                                  decoration: const ShapeDecoration(
+                                    color: Colors.lightBlue,
+                                    shape: CircleBorder(),
                                   ),
-                                  iconSize: 50,
-                                  onPressed: () {},
-                                )),
-                            Ink(
-                                decoration: const ShapeDecoration(
-                                  color: Colors.lightBlue,
-                                  shape: CircleBorder(),
+                                  child: IconButton(
+                                    icon: Icon(
+                                      Custom_icons_iconsdart.facebook,
+                                      size: 20,
+                                    ),
+                                    iconSize: 50,
+                                    onPressed: () {},
+                                  )),
+                            ),
+                            Container(
+                              height: 50,
+                              width: 50,
+                              decoration: BoxDecoration(
+                                border: Border.all(width: 3),
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(40),
                                 ),
-                                child: IconButton(
-                                  icon: Icon(
-                                    Icons.directions_transit,
+                              ),
+                              child: Ink(
+                                  decoration: const ShapeDecoration(
+                                    color: Colors.green,
+                                    shape: CircleBorder(),
                                   ),
-                                  iconSize: 50,
-                                  onPressed: () {},
-                                )),
-                            Ink(
-                                decoration: const ShapeDecoration(
-                                  color: Colors.lightBlue,
-                                  shape: CircleBorder(),
+                                  child: IconButton(
+                                    icon: Icon(
+                                      Custom_icons_iconsdart.twitter,
+                                      size: 20,
+                                    ),
+                                    iconSize: 50,
+                                    onPressed: () {},
+                                  )),
+                            ),
+                            Container(
+                              height: 50,
+                              width: 50,
+                              decoration: BoxDecoration(
+                                border: Border.all(width: 3),
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(40),
                                 ),
-                                child: IconButton(
-                                  icon: Icon(
-                                    Icons.directions_transit,
+                              ),
+                              child: Ink(
+                                  decoration: const ShapeDecoration(
+                                    color: Colors.lightBlue,
+                                    shape: CircleBorder(),
                                   ),
-                                  iconSize: 50,
-                                  onPressed: () {},
-                                )),
+                                  child: IconButton(
+                                    icon: Icon(
+                                      Custom_icons_iconsdart.gplus,
+                                      size: 20,
+                                    ),
+                                    iconSize: 50,
+                                    onPressed: () {},
+                                  )),
+                            ),
                           ],
                         ),
                       ),
